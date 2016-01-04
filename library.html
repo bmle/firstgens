@@ -42,28 +42,68 @@
 		<!--END OF NAVBAR -->
 
 		<div class="container">
-			<div class="well text-center jumbotron"> 
+			<div class="well jumbotron"> 
 				<h1>FLIP Lending Library</h1>
 				<p>The FLIP Lending Library is a space in the Rock containing over 500 free textbooks for students who identify as First-Generation and/or Low-Income to use.</p>
 			</div>
 
 			<!-- Start of Divided Coloumns-->
 			<div class ="row">
-				<div class="col-md-6">
-					<h2>List of Textbooks</h2>
-					<ul class="list-group">
-						<li class="list-group-item">Textbook 1</li>
-						<li class="list-group-item">Textbook 2</li>
+				<div class="col-md-6 pad">
+					<h2>List of textbooks available</h2>
+					<p class="well">Books marked with * are permanent books: they can be used for an unlimited time <i>within the Rockefeller Library and must not be taken out</i>. In the library, they are marked with pink stickers on their spines.</p>
+
+					<!-- THIS IS ALL HARDCODED FOR NOW, BUT I PLAN ON
+						 CREATING SEPARATE TXT FILES TO STORE TEXTBOOKS AND
+						 RECURSIVELY INSERTING THEM HERE -->
+
+					<button class="list-group-item bold"data-toggle="collapse" data-target="#social-sciences">Social Sciences</button>
+					<ul id="social-sciences" class="collapse list-group">
+						<li class="list-group-item">Social Sciences Textbook 1</li>
+						<li class="list-group-item">Social Sciences Textbook 2</li>
+					</ul>
+
+					<button class="list-group-item bold" data-toggle="collapse" data-target="#humanities">Humanities</button>
+					<ul id="humanities" class="collapse list-group">
+						<li class="list-group-item">Humanities Textbook 1</li>
+						<li class="list-group-item">Humanities Textbook 2</li>
+					</ul>
+
+					<button class="list-group-item bold" data-toggle="collapse" data-target="#stem">STEM</button>
+					<ul id="stem" class="collapse list-group">
+						<li class="list-group-item">STEM Textbook 1</li>
+						<li class="list-group-item">STEM Textbook 2</li>
+					</ul>
+
+					<button class="list-group-item bold" data-toggle="collapse" data-target="#languages">Languages</button>
+					<ul id="languages" class="collapse list-group">
+						<li class="list-group-item">Languages Textbook 1</li>
+						<li class="list-group-item">Languages Textbook 2</li>
+					</ul>
+
+					<button class="list-group-item bold" data-toggle="collapse" data-target="#fine-arts">Fine Arts</button>
+					<ul id="fine-arts" class="collapse list-group">
+						<li class="list-group-item">Fine Arts Textbook 1</li>
+						<li class="list-group-item">Fine Arts Textbook 2</li>
 					</ul>
 				</div>
-				<div class="col-md-6">
-					<h2>How to Check out Textbooks</h2>
+
+				<div class="col-md-6 pad">
+					<h2>How to check out textbooks</h2>
 					<ul class="list-group">
-						<li class="list-group-item">Step 1 goes here!</li>
-						<li class="list-group-item">Step 2 goes here!</li>
+						<li class="list-group-item">1. Please record your name, e-mail, book title, and check-out date in the binder provided in the library, so that we may keep track of our inventory.</li>
+						<li class="list-group-item">2. Record the estimated amount of time you need to use the book for; this could be "three weeks" or “the semester” depending on how long you think you need it.</li>
+					</ul>
+
+					<h2>How to return textbooks</h2>
+					<ul class="list-group">
+						<li class="list-group-item">1. To return a book, sign the book back into the binder provided in the library.</li>
+						<li class="list-group-item">2. Our shelves are divided into disciplines, and each discipline has its textbooks organized in alphabetical order; please put your book back in its appropriate discipline and alphabetical position.</li>
 					</ul>
 				</div>
 			</div>
+
+
 
 			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
