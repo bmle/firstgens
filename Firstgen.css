@@ -1,0 +1,25 @@
+.jumbotron {
+	text-align: center;
+}
+
+body {
+	background-color: #FFFDCC; 
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.pad {
+	padding-bottom: 100px;
+}
+
+footer {
+  padding: 10px 0px 10px 0px;
+  background-color: #eee;
+  border-top: 1px solid #ddd;
+}

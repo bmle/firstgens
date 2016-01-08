@@ -1,0 +1,122 @@
+<!DOCTYPE html> 
+<html lang=en>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+		<title>First-Gens@Brown</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		<!-- My own CSS -->
+		<link rel="stylesheet" type="text/css" href="firstgen.css">
+	</head>
+
+	<body>
+		<!--NAVIGATION BAR -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">First-Gens@Brown</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="library.html">FLIP Library</a></li>
+						<li><a href="guidebook.html">"How to Brown" Guidebook</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		<!--END OF NAVBAR -->
+
+		<div class="container">
+			<div class="well jumbotron"> 
+				<img src="images/library_banner.png" style="width:100%; height:100%">
+				<p>The FLIP Lending Library is a space in the Rock containing over 500 free textbooks for students who identify as First-Generation and/or Low-Income to use.</p>
+			</div>
+
+
+
+			<!-- Start of Divided Coloumns-->
+			<div class ="row">
+				<div class="col-md-6 pad">
+					<h2>List of textbooks available</h2>
+					<p class="well">Books marked with * are permanent books: they can be used for an unlimited time <i>within the Rockefeller Library and must not be taken out</i>. In the library, they are marked with pink stickers on their spines.</p>
+
+					<!-- THIS IS ALL HARDCODED FOR NOW, BUT I PLAN ON
+						 CREATING SEPARATE TXT FILES TO STORE TEXTBOOKS AND
+						 RECURSIVELY INSERTING THEM HERE -->
+
+					<button class="list-group-item bold"data-toggle="collapse" data-target="#social-sciences">Social Sciences</button>
+					<ul id="social-sciences" class="collapse list-group">
+						<li class="list-group-item">Social Sciences Textbook 1</li>
+						<li class="list-group-item">Social Sciences Textbook 2</li>
+					</ul>
+
+					<button class="list-group-item bold" data-toggle="collapse" data-target="#humanities">Humanities</button>
+					<ul id="humanities" class="collapse list-group">
+						<li class="list-group-item">Humanities Textbook 1</li>
+						<li class="list-group-item">Humanities Textbook 2</li>
+					</ul>
+
+					<button class="list-group-item bold" data-toggle="collapse" data-target="#stem">STEM</button>
+					<ul id="stem" class="collapse list-group">
+						<li class="list-group-item">STEM Textbook 1</li>
+						<li class="list-group-item">STEM Textbook 2</li>
+					</ul>
+
+					<button class="list-group-item bold" data-toggle="collapse" data-target="#languages">Languages</button>
+					<ul id="languages" class="collapse list-group">
+						<li class="list-group-item">Languages Textbook 1</li>
+						<li class="list-group-item">Languages Textbook 2</li>
+					</ul>
+
+					<button class="list-group-item bold" data-toggle="collapse" data-target="#fine-arts">Fine Arts</button>
+					<ul id="fine-arts" class="collapse list-group">
+						<li class="list-group-item">Fine Arts Textbook 1</li>
+						<li class="list-group-item">Fine Arts Textbook 2</li>
+					</ul>
+				</div>
+
+				<div class="col-md-6 pad">
+					<h2>How to check out textbooks</h2>
+					<ul class="list-group">
+						<li class="list-group-item">1. Please record your name, e-mail, book title, and check-out date in the binder provided in the library, so that we may keep track of our inventory.</li>
+						<li class="list-group-item">2. Record the estimated amount of time you need to use the book for; this could be "three weeks" or “the semester” depending on how long you think you need it.</li>
+					</ul>
+
+					<h2>How to return textbooks</h2>
+					<ul class="list-group">
+						<li class="list-group-item">1. To return a book, sign the book back into the binder provided in the library.</li>
+						<li class="list-group-item">2. Our shelves are divided into disciplines, and each discipline has its textbooks organized in alphabetical order; please put your book back in its appropriate discipline and alphabetical position.</li>
+					</ul>
+				</div>
+			</div>
+
+
+
+			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<!-- Include all compiled plugins (below), or include individual files as needed -->
+			<script src="js/bootstrap.min.js"></script>
+		</div>
+
+		<!-- FOOTER -->
+		<footer class="footer container">
+			<p class="text-muted" style="text-align:center">© 2016 First Generation College Students at Brown University. All rights reserved.</p>
+		</footer>
+		
+	</body>
+</html>
