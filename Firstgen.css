@@ -34,3 +34,7 @@ footer {
 	font-size: 21px;
 	font-weight: 200;
 }
+
+.img-responsive {
+    margin: 0 auto;
+}
